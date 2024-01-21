@@ -2,7 +2,6 @@ import express from "express"
 import {merge, get} from "lodash"
 import {getUserBySessionToken} from "../controller/userRepo"
 
-
 export const isTheOwner = async (req: express.Request, res: express.Response, next: express.NextFunction) => {
     try {
         const {id} = req.params;
